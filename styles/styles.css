@@ -225,3 +225,25 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.top-of-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.top-of-header h3 {
+  padding-left: 20px;
+}
+.top-of-header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 20px;
+}
+.top-of-header li {
+  list-style: none;
+  padding-left: 60px;
+}
