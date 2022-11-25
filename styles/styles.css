@@ -236,21 +236,37 @@ html {
           justify-content: space-between;
 }
 .top-of-header h3 {
-  padding-left: 20px;
+  padding-left: 60px;
+  font-size: 2rem;
+  margin: 20px;
 }
 .top-of-header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 20px;
+  padding-right: 60px;
 }
-.top-of-header li {
+.top-of-header ul a {
+  text-decoration: none;
+  color: #2A3033;
+}
+.top-of-header ul li {
   list-style: none;
-  padding-left: 60px;
+  padding-left: 30px;
+  margin: 20px;
+}
+.top-of-header ul .contact-button {
+  background-color: #FBAF01;
+  font-weight: bold;
+  padding: 15px 25px 15px 25px;
+  margin: 5px 20px 20px 20px;
 }
 
 html {
   font-family: "PT Sans", sans-serif;
+  font-size: 125%;
+  color: #2A3033;
+  text-decoration: none;
 }
 
 .wrapper {

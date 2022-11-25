@@ -1,7 +1,11 @@
 @use './typography';
+@use './variables';
 
 html {
   font-family: 'PT Sans', sans-serif;
+  font-size: 125%;
+  color: variables.$font-main;
+  text-decoration: none;
 }
 
 .wrapper {
