@@ -1,0 +1,20 @@
+@use './variables';
+
+.about-section {
+  height: 50vh;
+  background-color: variables.$background-colour;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  padding-top: 90px;
+  .about-text {
+    padding-left: 100px;
+    h2 {
+      font-family: variables.$header-font;
+      font-size: variables.$h2-size;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -298,3 +298,26 @@ html {
   margin: 0 auto;
   width: 70%;
 }
+
+.about-section {
+  height: 50vh;
+  background-color: #E7E8EE;
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 90px;
+}
+.about-container .about-text {
+  padding-left: 100px;
+}
+.about-container .about-text h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
