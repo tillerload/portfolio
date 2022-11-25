@@ -1,0 +1,45 @@
+@use './variables';
+
+.skills-section {
+  background-color: variables.$main-colour;
+  color: white;
+  margin: 0;
+  height: 50vh;
+}
+
+.skills-container {
+  display: flex;
+  padding-top: 20px;
+  .skills-text {
+    width: 30%;
+    h2 {
+      font-size: variables.$h2-size;
+      font-family: variables.$header-font;
+      
+    }
+    p {
+
+    }
+
+  }
+  .skills-list {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    ul {
+      padding-right: 40px;
+      li {
+        padding-top: 20px;
+        list-style: none;
+        &:before {
+          content: "\2022";
+          color: variables.$button-colour;
+          display: inline-block;
+          width: 1rem;
+          margin-left: -1rem;
+        }
+      }
+    }
+
+  }
+}

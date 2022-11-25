@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=PT+Sans:wght@400;700&display=swap");
 html {
   line-height: 1.15;
@@ -311,13 +312,57 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 90px;
+  padding-top: 20px;
 }
 .about-container .about-text {
   padding-left: 100px;
 }
 .about-container .about-text h2 {
   font-family: "Nunito", sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 0;
+}
+
+.skills-section {
+  background-color: #3D48AE;
+  color: white;
+  margin: 0;
+  height: 50vh;
+}
+
+.skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+}
+.skills-container .skills-text {
+  width: 30%;
+}
+.skills-container .skills-text h2 {
+  font-size: 4rem;
+  font-family: "Nunito", sans-serif;
+}
+.skills-container .skills-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+}
+.skills-container .skills-list ul {
+  padding-right: 40px;
+}
+.skills-container .skills-list ul li {
+  padding-top: 20px;
+  list-style: none;
+}
+.skills-container .skills-list ul li:before {
+  content: "•";
+  color: #FBAF01;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
 }
