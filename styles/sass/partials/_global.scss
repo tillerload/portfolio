@@ -1,0 +1,10 @@
+@use './typography';
+
+html {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 70%;
+}
