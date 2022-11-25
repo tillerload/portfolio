@@ -227,6 +227,10 @@ html {
   overflow: hidden;
 }
 
+header {
+  height: 100vh;
+}
+
 .top-of-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,6 +242,7 @@ html {
 .top-of-header h3 {
   padding-left: 60px;
   font-size: 2rem;
+  font-family: "Nunito", sans-serif;
   margin: 20px;
 }
 .top-of-header ul {
@@ -260,6 +265,26 @@ html {
   font-weight: bold;
   padding: 15px 25px 15px 25px;
   margin: 5px 20px 20px 20px;
+}
+
+.title-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 275px;
+  margin: 0;
+}
+.title-content .title-text h1 {
+  font-size: 4.5rem;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+.title-content .title-text p {
+  margin: 0;
+  font-size: 1.8rem;
 }
 
 html {
