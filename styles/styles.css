@@ -292,7 +292,6 @@ html {
   font-family: "PT Sans", sans-serif;
   font-size: 125%;
   color: #2A3033;
-  text-decoration: none;
 }
 
 .wrapper {
@@ -370,4 +369,55 @@ html {
   display: inline-block;
   width: 1rem;
   margin-left: -1rem;
+}
+
+.projects-section h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 4rem;
+}
+.projects-section .projects-list {
+  list-style: none;
+  padding-left: 0;
+}
+.projects-section .projects-list li {
+  padding-bottom: 75px;
+}
+
+.projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects-container .project-img img {
+  margin-left: 0;
+}
+.projects-container .projects-text {
+  padding-left: 50px;
+}
+.projects-container .projects-text h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+.projects-container .projects-text h4 {
+  margin-top: 5px;
+  color: #3D48AE;
+}
+.projects-container .projects-text p {
+  margin: 10px 0 20px 0;
+}
+.projects-container .projects-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.projects-container .projects-buttons li {
+  padding: 15px 40px 15px 40px;
+  font-weight: bold;
+  background-color: #FBAF01;
+  margin-right: 20px;
 }

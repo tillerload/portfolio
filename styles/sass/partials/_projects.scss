@@ -1,0 +1,51 @@
+@use './variables';
+
+.projects-section {
+  h2 {
+    font-family: variables.$header-font;
+    font-size: variables.$h2-size;
+  }
+  .projects-list {
+    list-style: none;
+    padding-left: 0;
+    li {
+      padding-bottom: 75px;
+    }
+  }
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  .project-img {
+    img {
+      margin-left: 0;
+    }
+  }
+  .projects-text {
+    padding-left: 50px;
+    h3 {
+      font-size: variables.$h3-size;
+      margin: 0;
+    }
+    h4 {
+      margin-top: 5px;
+      color: variables.$main-colour;
+    }
+    p {
+      margin: 10px 0 20px 0;
+    }
+  }
+  .projects-buttons {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    li {
+      padding: 15px 40px 15px 40px;
+      font-weight: bold;
+      background-color: variables.$button-colour;
+      margin-right: 20px;
+     
+    }
+  }
+}
