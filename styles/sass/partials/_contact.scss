@@ -1,0 +1,28 @@
+@use './variables';
+
+.contact-section {
+  background-color: variables.$form-background;
+
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  .contact-text {
+    width: 30%;
+      h2 {
+        font-family: variables.$header-font;
+        font-size: variables.$h2-size;
+        margin-bottom: 0;
+      }
+      p {
+
+      }
+      .social-links {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+        justify-content: flex-start;
+      }
+  }
+}

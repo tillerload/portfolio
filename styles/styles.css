@@ -421,3 +421,34 @@ html {
   background-color: #FBAF01;
   margin-right: 20px;
 }
+
+.contact-section {
+  background-color: #DFE0FC;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact-container .contact-text {
+  width: 30%;
+}
+.contact-container .contact-text h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+.contact-container .contact-text .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
