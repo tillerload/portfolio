@@ -20,6 +20,9 @@
   .project-img {
     img {
       margin-left: 0;
+      width: 400px;
+      height: 300px;
+      border: variables.$main-colour 5px solid;
     }
   }
   .projects-text {

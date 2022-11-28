@@ -407,6 +407,9 @@ a {
 }
 .projects-container .project-img img {
   margin-left: 0;
+  width: 400px;
+  height: 300px;
+  border: #3D48AE 5px solid;
 }
 .projects-container .projects-text {
   padding-left: 50px;
