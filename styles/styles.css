@@ -416,7 +416,7 @@ html {
   padding-left: 0;
 }
 .projects-container .projects-buttons li {
-  padding: 15px 40px 15px 40px;
+  padding: 10px 40px 10px 40px;
   font-weight: bold;
   background-color: #FBAF01;
   margin-right: 20px;
@@ -424,6 +424,8 @@ html {
 
 .contact-section {
   background-color: #DFE0FC;
+  padding-top: 0px;
+  padding-bottom: 50px;
 }
 
 .contact-container {
@@ -441,6 +443,7 @@ html {
   font-family: "Nunito", sans-serif;
   font-size: 4rem;
   margin-bottom: 0;
+  line-height: 80px;
 }
 .contact-container .contact-text .social-links {
   display: -webkit-box;
@@ -451,4 +454,53 @@ html {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+.contact-container .contact-text .social-links li {
+  padding-right: 40px;
+}
+.contact-container .contact-forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 100px 0 0 100px;
+  width: 100%;
+}
+.contact-container .contact-forms form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  padding-top: 10px;
+  width: 100%;
+}
+.contact-container .contact-forms form input {
+  border: none;
+}
+.contact-container .contact-forms .username-form input,
+.contact-container .contact-forms .email-form input {
+  margin-top: 5px;
+  padding-bottom: 25px;
+}
+.contact-container .contact-forms .message-form input {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 200px;
+}
+.contact-container .contact-forms button {
+  background-color: #FBAF01;
+  font-weight: bold;
+  border: none;
+  padding: 10px 40px 10px 40px;
 }

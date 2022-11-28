@@ -2,6 +2,8 @@
 
 .contact-section {
   background-color: variables.$form-background;
+  padding-top: 0px;
+  padding-bottom: 50px;
 
 }
 
@@ -14,6 +16,7 @@
         font-family: variables.$header-font;
         font-size: variables.$h2-size;
         margin-bottom: 0;
+        line-height: 80px;
       }
       p {
 
@@ -23,6 +26,47 @@
         list-style: none;
         padding-left: 0;
         justify-content: flex-start;
+        li {
+          padding-right: 40px;
+        }
       }
   }
+  .contact-forms {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 0 0 100px;
+    width: 100%;
+    form {
+      display: flex;
+      flex-direction: column;
+      font-family: variables.$header-font;
+      font-size: 16px;
+      padding-top: 10px;
+      width: 100%;
+      input {
+        border: none; 
+      }
+      
+    }
+    .username-form input,
+    .email-form input {
+      margin-top: 5px;
+      padding-bottom: 25px;
+    }
+    .message-form input {
+      margin-top: 5px;
+      margin-bottom: 20px;
+      padding-bottom: 200px;
+      
+    }
+    button {
+      background-color: variables.$button-colour;
+      font-weight: bold;
+      border: none;
+      padding: 10px 40px 10px 40px;
+    }
+
+  }
+
 }
