@@ -504,3 +504,16 @@ html {
   border: none;
   padding: 10px 40px 10px 40px;
 }
+
+footer {
+  background-color: #3D48AE;
+  margin: 0;
+  padding: 15px 0 15px 0;
+}
+footer p {
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
