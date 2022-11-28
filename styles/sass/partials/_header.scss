@@ -8,6 +8,9 @@ header {
 .top-of-header {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  background-color: variables.$background-colour;
+  width: 100%;
   h3 {
     padding-left: 60px;
     font-size: variables.$h3-size;
@@ -17,7 +20,9 @@ header {
   }
   ul {
     display: flex;
+    align-items: center;
     padding-right: 60px;
+    margin: 0;
     a {
       text-decoration: none;
       color: variables.$font-main;
@@ -25,17 +30,24 @@ header {
     }
     li {
       list-style: none;
-      padding-left: 30px;
       margin: 20px;
+      &:hover {
+        border-bottom: 2px solid variables.$button-colour;
+      }
       
       
     }
     .contact-button {
       background-color: variables.$button-colour;
       font-weight: bold;
-      padding: 15px 25px 15px 25px;
-      margin: 5px 20px 20px 20px;
-      
+      padding: 12px 25px 12px 25px;
+      border: 2px solid variables.$background-colour;
+      &:hover {
+        color: white;
+        border: 2px solid white;
+        background-color: variables.$main-colour;
+        
+      }
     }
   }
 }

@@ -239,6 +239,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
+  background-color: #E7E8EE;
+  width: 100%;
 }
 .top-of-header h3 {
   padding-left: 60px;
@@ -250,7 +253,11 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-right: 60px;
+  margin: 0;
 }
 .top-of-header ul a {
   text-decoration: none;
@@ -258,14 +265,21 @@ header {
 }
 .top-of-header ul li {
   list-style: none;
-  padding-left: 30px;
   margin: 20px;
+}
+.top-of-header ul li:hover {
+  border-bottom: 2px solid #FBAF01;
 }
 .top-of-header ul .contact-button {
   background-color: #FBAF01;
   font-weight: bold;
-  padding: 15px 25px 15px 25px;
-  margin: 5px 20px 20px 20px;
+  padding: 12px 25px 12px 25px;
+  border: 2px solid #E7E8EE;
+}
+.top-of-header ul .contact-button:hover {
+  color: white;
+  border: 2px solid white;
+  background-color: #3D48AE;
 }
 
 .title-content {
@@ -301,7 +315,8 @@ html {
 
 .about-section {
   height: 50vh;
-  background-color: #E7E8EE;
+  background-color: #818CEF;
+  color: white;
 }
 
 .about-container {
