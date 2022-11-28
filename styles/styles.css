@@ -239,8 +239,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: fixed;
-  background-color: #E7E8EE;
   width: 100%;
 }
 .top-of-header h3 {
@@ -259,10 +257,6 @@ header {
   padding-right: 60px;
   margin: 0;
 }
-.top-of-header ul a {
-  text-decoration: none;
-  color: #2A3033;
-}
 .top-of-header ul li {
   list-style: none;
   margin: 20px;
@@ -274,7 +268,7 @@ header {
   background-color: #FBAF01;
   font-weight: bold;
   padding: 12px 25px 12px 25px;
-  border: 2px solid #E7E8EE;
+  border: 2px solid white;
 }
 .top-of-header ul .contact-button:hover {
   color: white;
@@ -311,6 +305,11 @@ html {
 .wrapper {
   margin: 0 auto;
   width: 70%;
+}
+
+a {
+  text-decoration: none;
+  color: #2A3033;
 }
 
 .about-section {

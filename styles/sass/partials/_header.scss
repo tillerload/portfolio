@@ -8,8 +8,6 @@ header {
 .top-of-header {
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  background-color: variables.$background-colour;
   width: 100%;
   h3 {
     padding-left: 60px;
@@ -23,11 +21,6 @@ header {
     align-items: center;
     padding-right: 60px;
     margin: 0;
-    a {
-      text-decoration: none;
-      color: variables.$font-main;
-      
-    }
     li {
       list-style: none;
       margin: 20px;
@@ -41,7 +34,7 @@ header {
       background-color: variables.$button-colour;
       font-weight: bold;
       padding: 12px 25px 12px 25px;
-      border: 2px solid variables.$background-colour;
+      border: 2px solid white;
       // WHY WONT THIS TEXT CHANGE!!! TO LOW OF SPECIFICITY ??? AHHHH
       // ALSO FIX VIEW HEIGHT ON SKILLS AND ABOUT TO ACCOMODATE THE NAV BAR ITS ANNOYING AS HELL
       &:hover {
