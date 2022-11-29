@@ -32,39 +32,29 @@
       }
   }
   .contact-forms {
+    padding: 100px 0 20px 100px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 100px 0 0 100px;
+    font-family: variables.$header-font;
+    font-size: 17px;
     width: 100%;
-    form {
-      display: flex;
-      flex-direction: column;
-      font-family: variables.$header-font;
-      font-size: 16px;
-      padding-top: 10px;
-      width: 100%;
-      input {
-        border: none; 
-      }
-      
+    label {
+      padding: 15px 0 5px 0;
     }
-    .username-form input,
-    .email-form input {
-      margin-top: 5px;
-      padding-bottom: 25px;
+    input {
+      height: 50px;
+      border: none;
     }
-    .message-form input {
-      margin-top: 5px;
-      margin-bottom: 20px;
-      padding-bottom: 200px;
-      
+    textarea {
+      border: none;
     }
     button {
       background-color: variables.$button-colour;
       font-weight: bold;
       border: none;
+      margin-top: 20px;
       padding: 10px 40px 10px 40px;
+      width: 20%;
     }
 
   }

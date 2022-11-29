@@ -409,7 +409,6 @@ a {
   margin-left: 0;
   width: 400px;
   height: 300px;
-  border: #3D48AE 5px solid;
 }
 .projects-container .projects-text {
   padding-left: 50px;
@@ -476,20 +475,7 @@ a {
   padding-right: 40px;
 }
 .contact-container .contact-forms {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 100px 0 0 100px;
-  width: 100%;
-}
-.contact-container .contact-forms form {
+  padding: 100px 0 20px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,28 +484,26 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  padding-top: 10px;
+  font-size: 17px;
   width: 100%;
 }
-.contact-container .contact-forms form input {
+.contact-container .contact-forms label {
+  padding: 15px 0 5px 0;
+}
+.contact-container .contact-forms input {
+  height: 50px;
   border: none;
 }
-.contact-container .contact-forms .username-form input,
-.contact-container .contact-forms .email-form input {
-  margin-top: 5px;
-  padding-bottom: 25px;
-}
-.contact-container .contact-forms .message-form input {
-  margin-top: 5px;
-  margin-bottom: 20px;
-  padding-bottom: 200px;
+.contact-container .contact-forms textarea {
+  border: none;
 }
 .contact-container .contact-forms button {
   background-color: #FBAF01;
   font-weight: bold;
   border: none;
+  margin-top: 20px;
   padding: 10px 40px 10px 40px;
+  width: 20%;
 }
 
 footer {
