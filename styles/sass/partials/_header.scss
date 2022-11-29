@@ -40,7 +40,6 @@ header {
       &:hover {
         border: 2px solid white;
         background-color: variables.$main-colour;
-        
       }
     }
   }
@@ -49,7 +48,8 @@ header {
 .title-content {
   display: flex;
   align-items: center;
-  padding-top: 275px;
+  justify-content: center;
+  padding-top: 125px;
   margin: 0;
   .title-text {
     h1 {
@@ -60,6 +60,13 @@ header {
     p {
       margin: 0;
       font-size: 1.8rem;
+    }
+    
+  }
+  .title-img {
+    img { 
+      width: 400px;
+      margin: 0;
     }
   }
 }
