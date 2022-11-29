@@ -554,3 +554,35 @@ footer p {
     font-size: 18px;
   }
 }
+@media (max-width: 1000px) {
+  .title-content .title-img img {
+    width: 300px;
+  }
+  .about-section,
+.skills-section {
+    height: 500px;
+  }
+  .contact-text h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 429px) {
+  header .title-content .title-text {
+    text-align: center;
+  }
+  header .title-content .title-img {
+    display: none;
+  }
+  header a {
+    display: none;
+  }
+  header .contact-button a {
+    font-size: 18px;
+    display: block;
+    padding: 5px 15px;
+    width: 125px;
+  }
+  .projects-section img {
+    display: none;
+  }
+}
