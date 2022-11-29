@@ -262,18 +262,17 @@ header {
   margin: 20px;
 }
 .top-of-header ul li:hover {
-  border-bottom: 2px solid #FBAF01;
+  border-bottom: 2px solid #FFC759;
 }
 .top-of-header ul .contact-button {
-  background-color: #FBAF01;
+  background-color: #FFC759;
   font-weight: bold;
   padding: 12px 25px 12px 25px;
-  border: 2px solid white;
+  border: 2px solid #181A18;
 }
 .top-of-header ul .contact-button:hover {
-  color: white;
   border: 2px solid white;
-  background-color: #3D48AE;
+  background-color: #386641;
 }
 
 .title-content {
@@ -299,7 +298,8 @@ header {
 html {
   font-family: "PT Sans", sans-serif;
   font-size: 125%;
-  color: #2A3033;
+  color: white;
+  background-color: #181A18;
 }
 
 .wrapper {
@@ -309,12 +309,12 @@ html {
 
 a {
   text-decoration: none;
-  color: #2A3033;
+  color: white;
 }
 
 .about-section {
   height: 50vh;
-  background-color: #818CEF;
+  background-color: #8BB174;
   color: white;
 }
 
@@ -337,7 +337,7 @@ a {
 }
 
 .skills-section {
-  background-color: #3D48AE;
+  background-color: #386641;
   color: white;
   margin: 0;
   height: 50vh;
@@ -379,7 +379,7 @@ a {
 }
 .skills-container .skills-list ul li:before {
   content: "•";
-  color: #FBAF01;
+  color: #FFC759;
   display: inline-block;
   width: 1rem;
   margin-left: -1rem;
@@ -419,7 +419,7 @@ a {
 }
 .projects-container .projects-text h4 {
   margin-top: 5px;
-  color: #3D48AE;
+  color: #386641;
 }
 .projects-container .projects-text p {
   margin: 10px 0 20px 0;
@@ -434,14 +434,20 @@ a {
 .projects-container .projects-buttons li {
   padding: 10px 40px 10px 40px;
   font-weight: bold;
-  background-color: #FBAF01;
+  background-color: #FFC759;
   margin-right: 20px;
+  border: 2px solid #181A18;
+}
+.projects-container .projects-buttons li:hover {
+  border: 2px solid white;
+  background-color: #386641;
 }
 
 .contact-section {
-  background-color: #DFE0FC;
+  background-color: #A5AE9E;
   padding-top: 0px;
   padding-bottom: 50px;
+  color: #2A3033;
 }
 
 .contact-container {
@@ -474,6 +480,12 @@ a {
 .contact-container .contact-text .social-links li {
   padding-right: 40px;
 }
+.contact-container .contact-text .social-links a {
+  color: #2A3033;
+}
+.contact-container .contact-text .social-links a:hover {
+  color: #FFC759;
+}
 .contact-container .contact-forms {
   padding: 100px 0 20px 100px;
   display: -webkit-box;
@@ -498,16 +510,22 @@ a {
   border: none;
 }
 .contact-container .contact-forms button {
-  background-color: #FBAF01;
+  background-color: #FFC759;
   font-weight: bold;
   border: none;
   margin-top: 20px;
   padding: 10px 40px 10px 40px;
   width: 20%;
+  border: 2px solid #A5AE9E;
+}
+.contact-container .contact-forms button:hover {
+  border: 2px solid white;
+  background-color: #386641;
+  color: white;
 }
 
 footer {
-  background-color: #3D48AE;
+  background-color: #386641;
   margin: 0;
   padding: 15px 0 15px 0;
 }
