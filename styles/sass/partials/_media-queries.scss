@@ -119,3 +119,25 @@
 
   }
 }
+
+@media(max-width: 376px) {
+  header {
+    .top-of-header {
+      h3 {
+        padding: 0;
+        margin-right: 0;
+      }
+      nav {
+        ul {
+          .contact-button {
+            display: block;
+            margin: 20px 15px 20px 0;
+            padding: 12px 20px;
+            
+          }
+        }
+      }
+    }
+  }
+  
+}
