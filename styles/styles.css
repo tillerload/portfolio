@@ -567,6 +567,12 @@ footer p {
   }
 }
 @media (max-width: 429px) {
+  header .top-of-header h3 {
+    padding-left: 10px;
+  }
+  header .top-of-header nav ul {
+    padding: 0;
+  }
   header .title-content .title-text {
     text-align: center;
   }
@@ -579,10 +585,79 @@ footer p {
   header .contact-button a {
     font-size: 18px;
     display: block;
-    padding: 5px 15px;
-    width: 125px;
+    padding: 5px 10px;
+    width: 115px;
+  }
+  .about-section {
+    height: 926px;
+  }
+  .about-section .about-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-section .about-container .about-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .skills-section {
+    height: 1050px;
+  }
+  .skills-section .skills-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills-section .skills-container .skills-text {
+    text-align: center;
+    width: 100%;
+  }
+  .skills-section .skills-container .skills-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .projects-section .projects-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .projects-section img {
+    display: none;
+  }
+  .contact-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-section .contact-container .contact-text {
+    width: 100%;
+  }
+  .contact-section .contact-container .contact-text .social-links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-section .contact-container .contact-forms {
     display: none;
   }
 }
