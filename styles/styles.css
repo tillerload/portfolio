@@ -320,7 +320,7 @@ a {
 }
 
 .about-section {
-  height: 50vh;
+  height: 400px;
   background-color: #8BB174;
   color: white;
 }
@@ -352,7 +352,7 @@ a {
   background-color: #386641;
   color: white;
   margin: 0;
-  height: 50vh;
+  height: 400px;
 }
 
 .skills-container {
