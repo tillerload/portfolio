@@ -262,10 +262,10 @@ header {
   margin: 20px;
 }
 .top-of-header ul li:hover {
-  border-bottom: 2px solid #FFC759;
+  border-bottom: 2px solid #a3813c;
 }
 .top-of-header ul .contact-button {
-  background-color: #FFC759;
+  background-color: #a3813c;
   font-weight: bold;
   padding: 12px 25px 12px 25px;
   border: 2px solid #181A18;
@@ -302,6 +302,50 @@ header {
   margin: 0;
 }
 
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #a3813c; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  -webkit-animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
+          animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
 html {
   font-family: "PT Sans", sans-serif;
   font-size: 125%;
@@ -321,7 +365,7 @@ a {
 
 .about-section {
   height: 400px;
-  background-color: #8BB174;
+  background-color: #7ea168;
   color: white;
 }
 
@@ -391,7 +435,7 @@ a {
 }
 .skills-container .skills-list ul li:before {
   content: "•";
-  color: #FFC759;
+  color: #a3813c;
   display: inline-block;
   width: 1rem;
   margin-left: -1rem;
@@ -401,12 +445,23 @@ a {
   font-family: "Nunito", sans-serif;
   font-size: 4rem;
 }
+.projects-section .project-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
 .projects-section .projects-list {
   list-style: none;
   padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .projects-section .projects-list li {
-  padding-bottom: 75px;
+  width: 50%;
+  margin-bottom: 20px;
+  padding-left: 20px;
 }
 
 .projects-container {
@@ -419,8 +474,8 @@ a {
 }
 .projects-container .project-img img {
   margin-left: 0;
-  width: 400px;
-  height: 300px;
+  width: 200px;
+  height: 150px;
 }
 .projects-container .projects-text {
   padding-left: 50px;
@@ -446,7 +501,7 @@ a {
 .projects-container .projects-buttons li {
   padding: 10px 40px 10px 40px;
   font-weight: bold;
-  background-color: #FFC759;
+  background-color: #a3813c;
   margin-right: 20px;
   border: 2px solid #181A18;
 }
@@ -496,7 +551,7 @@ a {
   color: #2A3033;
 }
 .contact-container .contact-text .social-links a:hover {
-  color: #FFC759;
+  color: #a3813c;
 }
 .contact-container .contact-forms {
   padding: 100px 0 20px 100px;
@@ -522,7 +577,8 @@ a {
   border: none;
 }
 .contact-container .contact-forms button {
-  background-color: #FFC759;
+  color: white;
+  background-color: #a3813c;
   font-weight: bold;
   border: none;
   margin-top: 20px;

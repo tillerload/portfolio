@@ -5,11 +5,19 @@
     font-family: variables.$header-font;
     font-size: variables.$h2-size;
   }
+  .project-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
   .projects-list {
     list-style: none;
     padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
     li {
-      padding-bottom: 75px;
+      width: 50%;
+      margin-bottom: 20px;
+      padding-left: 20px;
     }
   }
 }
@@ -20,8 +28,8 @@
   .project-img {
     img {
       margin-left: 0;
-      width: 400px;
-      height: 300px;
+      width: 200px;
+      height: 150px;
     }
   }
   .projects-text {
