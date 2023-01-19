@@ -6,7 +6,7 @@ html {
   font-size: 125%;
   color: variables.$font-main;
   background-color: #181A18;
-  
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -20,3 +20,4 @@ a {
   color: variables.$font-main;
   
 }
+

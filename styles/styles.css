@@ -351,6 +351,7 @@ html {
   font-size: 125%;
   color: white;
   background-color: #181A18;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
