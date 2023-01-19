@@ -452,22 +452,16 @@ a {
 .projects-section .projects-list {
   list-style: none;
   padding-left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.projects-section .projects-list li {
-  width: 50%;
-  margin-bottom: 20px;
-  padding-left: 20px;
 }
 
 .projects-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -478,36 +472,108 @@ a {
   height: 150px;
 }
 .projects-container .projects-text {
-  padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 25px;
 }
 .projects-container .projects-text h3 {
-  font-size: 2rem;
   margin: 0;
+  font-size: 2rem;
 }
 .projects-container .projects-text h4 {
-  margin-top: 5px;
+  margin: 0;
   color: #386641;
 }
 .projects-container .projects-text p {
-  margin: 10px 0 20px 0;
+  margin-top: 10px;
 }
 .projects-container .projects-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  padding-left: 0;
+  padding: 0;
 }
 .projects-container .projects-buttons li {
-  padding: 10px 40px 10px 40px;
+  padding: 10px 40px;
   font-weight: bold;
   background-color: #a3813c;
-  margin-right: 20px;
+  left: 300px;
   border: 2px solid #181A18;
 }
 .projects-container .projects-buttons li:hover {
   border: 2px solid white;
   background-color: #386641;
+}
+.projects-container .projects-buttons .right-button {
+  margin-left: 10px;
+}
+
+.carousel {
+  height: 75vh;
+  position: relative;
+  width: 50%;
+  margin-left: 18vw;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  -webkit-transition: 200ms opacity ease-in-out;
+  transition: 200ms opacity ease-in-out;
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 75%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #a3813c;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: transparent;
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: #386641;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
 }
 
 .contact-section {
