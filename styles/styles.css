@@ -441,6 +441,20 @@ a {
   margin-left: -1rem;
 }
 
+.projects-section .wip {
+  background-color: red;
+  font-family: white;
+  border-radius: 50%;
+  text-align: center;
+  width: 10%;
+  margin: 0;
+  padding: 10px 40px 10px 0;
+  border: 10px red ridge;
+  font-weight: bold;
+  position: absolute;
+  left: 300px;
+  top: 1px;
+}
 .projects-section h2 {
   font-family: "Nunito", sans-serif;
   font-size: 4rem;
@@ -465,6 +479,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 .projects-container .project-img img {
   margin-left: 0;
@@ -482,7 +497,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 25px;
 }
 .projects-container .projects-text h3 {
   margin: 0;
