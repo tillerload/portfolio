@@ -708,10 +708,19 @@ footer p {
   header .top-of-header nav ul {
     padding: 0;
   }
+  header .title-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   header .title-content .title-text {
     text-align: center;
   }
-  header .title-content .title-img {
+  header .title-content .title-text p {
     display: none;
   }
   header a {
@@ -764,6 +773,12 @@ footer p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .projects-section .carousel .carousel-button.next {
+    right: -2rem;
+  }
+  .projects-section .carousel .carousel-button.prev {
+    left: -2rem;
+  }
   .projects-section .projects-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -806,4 +821,13 @@ footer p {
     margin: 20px 15px 20px 0;
     padding: 12px 20px;
   }
+  .title-img {
+    display: none;
+  }
+  .title-text p {
+    display: none;
+  }
+}
+.carousel-button {
+  top: 92.5%;
 }
