@@ -262,10 +262,10 @@ header {
   margin: 20px;
 }
 .top-of-header ul li:hover {
-  border-bottom: 2px solid #FFC759;
+  border-bottom: 2px solid #a3813c;
 }
 .top-of-header ul .contact-button {
-  background-color: #FFC759;
+  background-color: #a3813c;
   font-weight: bold;
   padding: 12px 25px 12px 25px;
   border: 2px solid #181A18;
@@ -302,11 +302,56 @@ header {
   margin: 0;
 }
 
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #a3813c; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  -webkit-animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
+          animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
 html {
   font-family: "PT Sans", sans-serif;
   font-size: 125%;
   color: white;
   background-color: #181A18;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -321,7 +366,7 @@ a {
 
 .about-section {
   height: 400px;
-  background-color: #8BB174;
+  background-color: #7ea168;
   color: white;
 }
 
@@ -391,68 +436,157 @@ a {
 }
 .skills-container .skills-list ul li:before {
   content: "•";
-  color: #FFC759;
+  color: #a3813c;
   display: inline-block;
   width: 1rem;
   margin-left: -1rem;
 }
 
+.projects-section .wip {
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+  border: 2px solid red;
+}
+.projects-section .wip .wip-text {
+  font-size: 25px;
+  padding: 5px;
+}
 .projects-section h2 {
   font-family: "Nunito", sans-serif;
   font-size: 4rem;
 }
+.projects-section .project-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
 .projects-section .projects-list {
   list-style: none;
   padding-left: 0;
-}
-.projects-section .projects-list li {
-  padding-bottom: 75px;
 }
 
 .projects-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.projects-container .project-img img {
+  margin-left: 0;
+  width: 200px;
+  height: 150px;
+}
+.projects-container .projects-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-.projects-container .project-img img {
-  margin-left: 0;
-  width: 400px;
-  height: 300px;
-}
-.projects-container .projects-text {
-  padding-left: 50px;
-}
 .projects-container .projects-text h3 {
-  font-size: 2rem;
   margin: 0;
+  font-size: 2rem;
 }
 .projects-container .projects-text h4 {
-  margin-top: 5px;
+  margin: 0;
   color: #386641;
 }
 .projects-container .projects-text p {
-  margin: 10px 0 20px 0;
+  margin-top: 10px;
 }
 .projects-container .projects-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  padding-left: 0;
+  padding: 0;
 }
 .projects-container .projects-buttons li {
-  padding: 10px 40px 10px 40px;
+  padding: 10px 40px;
   font-weight: bold;
-  background-color: #FFC759;
-  margin-right: 20px;
+  background-color: #a3813c;
+  left: 300px;
   border: 2px solid #181A18;
 }
 .projects-container .projects-buttons li:hover {
   border: 2px solid white;
   background-color: #386641;
+}
+.projects-container .projects-buttons .right-button {
+  margin-left: 10px;
+}
+
+.carousel {
+  height: 75vh;
+  position: relative;
+  width: 50%;
+  margin-left: 18vw;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  -webkit-transition: 200ms opacity ease-in-out;
+  transition: 200ms opacity ease-in-out;
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 75%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #a3813c;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: transparent;
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: #386641;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
 }
 
 .contact-section {
@@ -496,7 +630,7 @@ a {
   color: #2A3033;
 }
 .contact-container .contact-text .social-links a:hover {
-  color: #FFC759;
+  color: #a3813c;
 }
 .contact-container .contact-forms {
   padding: 100px 0 20px 100px;
@@ -522,7 +656,8 @@ a {
   border: none;
 }
 .contact-container .contact-forms button {
-  background-color: #FFC759;
+  color: white;
+  background-color: #a3813c;
   font-weight: bold;
   border: none;
   margin-top: 20px;
@@ -573,10 +708,19 @@ footer p {
   header .top-of-header nav ul {
     padding: 0;
   }
+  header .title-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   header .title-content .title-text {
     text-align: center;
   }
-  header .title-content .title-img {
+  header .title-content .title-text p {
     display: none;
   }
   header a {
@@ -629,6 +773,12 @@ footer p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .projects-section .carousel .carousel-button.next {
+    right: -2rem;
+  }
+  .projects-section .carousel .carousel-button.prev {
+    left: -2rem;
+  }
   .projects-section .projects-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -671,4 +821,13 @@ footer p {
     margin: 20px 15px 20px 0;
     padding: 12px 20px;
   }
+  .title-img {
+    display: none;
+  }
+  .title-text p {
+    display: none;
+  }
+}
+.carousel-button {
+  top: 92.5%;
 }

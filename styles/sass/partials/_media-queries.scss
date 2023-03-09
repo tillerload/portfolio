@@ -42,11 +42,13 @@
     }
 
     .title-content {
+      display: flex;
+      flex-direction: column-reverse;
       .title-text {
         text-align: center;
-      }
-      .title-img {
-        display: none;
+        p {
+          display: none;
+        }
       }
     }
 
@@ -93,6 +95,14 @@
   }
 
   .projects-section {
+    .carousel {
+      .carousel-button.next {
+        right: -2rem;
+      }
+      .carousel-button.prev {
+        left: -2rem;
+      }
+    }
     .projects-container {
       justify-content: center;
     }
@@ -126,7 +136,7 @@
       h3 {
         padding: 0;
         margin-right: 0;
-      }
+      } 
       nav {
         ul {
           .contact-button {
@@ -139,5 +149,19 @@
       }
     }
   }
+
+  .title-img {
+    display: none;
+  }
   
+  .title-text {
+    p {
+      display: none;
+    }
+  }
 }
+
+.carousel-button {
+  top: 92.5%;
+}
+

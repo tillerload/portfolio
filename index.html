@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Tyler George</title>
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="assets/gangstas-christmas(1).png">
   
 </head>
 <body>
@@ -30,7 +31,7 @@
       <div class="title-content">
         <div class="title-text">
           <h1>tyler george</h1>
-          <p>front end web developer</p>
+          <p class="typewriter">front end web developer</p>
         </div><!-- end of title text -->
         <div class="title-img">
           <img src="./assets/gangstas-christmas(1).png" alt="picture of me i guess?">
@@ -64,7 +65,7 @@
         <div class="skills-container">
           <div class="skills-text">
             <h2>skills</h2>
-            <p>Here is a list of my text stack as well as technical skills</p>
+            <p>Here is a list of my tech stack as well as technical skills</p>
           </div> <!-- end of skills text -->
           <div class="skills-list">
             <ul>
@@ -95,56 +96,63 @@
     <section class="projects-section" id="projects">
       <div class="wrapper">
         <h2>projects</h2>
-        <ul class="projects-list">
-          <li>
-            <div class="projects-container">
-              <div class="project-img">
-                <img src="./assets/whatDoYouNoImg.png" alt="project 3 image">
-              </div><!-- end of project img -->
-              <div class="projects-text">
-                <h3>What do YOU no?</h3>
-                <h4>React | Firebase | API Integration</h4>
-                <p>Players are presented with two randomly generated homophonous words - like piece and peace - and a single definition. Players must match the correct spelling to the definition.</p>
-                <ul class="projects-buttons">
-                  <li><a href="https://whatchuknohuh.netlify.app/" target="_blank">view live</a></li>
-                  <li><a href="https://github.com/JunoProjectFour/whatchaKnoHuh" target="_blank">view code</a></li>
-                </ul>
-              </div>
-            </div><!-- end of projects container -->
-          </li>
-          <li>
-            <div class="projects-container">
-              <div class="project-img">
-                <img src="./assets/whatDayAtATime.ico" alt="project 1 image">
-              </div><!-- end of project img -->
-              <div class="projects-text">
-                <h3>One Day at a Time</h3>
-                <h4>React | Firebase</h4>
-                <p>A mood tracker app, user can select a mood they are feeling on a given day, that mood is displayed as a corresponding color on a calendar for the current month</p>
-                <ul class="projects-buttons">
-                  <li><a href="https://fluffy-klepon-a96676.netlify.app/" target="_blank">view live</a></li>
-                  <li><a href="https://github.com/tillerload/one-day-at-a-time" target="_blank">view code</a></li>
-                </ul>
-              </div>
-            </div><!-- end of projects container -->
-          </li>
-          <li>
-            <div class="projects-container">
-              <div class="project-img">
-                <img src="./assets/sanctuary-helpers-400x300.png" alt="project 2 image">
-              </div><!-- end of project img -->
-              <div class="projects-text">
-                <h3>Sanctuary Helpers</h3>
-                <h4>HTML | CSS | Sass</h4>
-                <p>PSD conversion project that showcases my ability to follow a PSD and make it responsive, accesiable and accuarate</p>
-                <ul class="projects-buttons">
-                  <li><a href="https://imaginative-arithmetic-ebc275.netlify.app/" target="_blank">view live</a></li>
-                  <li><a href="https://github.com/tillerload/tyler-george-project-1" target="_blank">view code</a></li>
-                </ul>
-              </div>
-            </div><!-- end of projects container -->
-          </li>
-        </ul> <!-- end of projects list -->
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+          <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+          <ul class="projects-list" data-slides>
+            <li class="slide" data-active>
+              <div class="projects-container">
+                <div class="project-img">
+                  <img src="./assets/whatDayAtATime.ico" alt="project 1 image">
+                </div><!-- end of project img -->
+                <div class="projects-text">
+                  <h3>One Day at a Time</h3>
+                  <h4>React | Firebase</h4>
+                  <p>A mood tracker app, user can select a mood they are feeling on a given day, that mood is displayed as a corresponding color on a calendar for the current month</p>
+                  <ul class="projects-buttons">
+                    <li class='left-button'><a href="https://fluffy-klepon-a96676.netlify.app/" target="_blank">view live</a></li>
+                    <li class='right-button'><a href="https://github.com/tillerload/one-day-at-a-time" target="_blank">view code</a></li>
+                  </ul>
+                  <div class="wip">
+                    <h3 class="wip-text">WOrk in progress</h3>
+                  </div>
+                </div>
+              </div><!-- end of projects container -->
+            </li>
+            <li class="slide" >
+              <div class="projects-container">
+                <div class="project-img">
+                  <img src="./assets/whatDoYouNoImg.png" alt="project 3 image">
+                </div><!-- end of project img -->
+                <div class="projects-text">
+                  <h3>What do YOU no?</h3>
+                  <h4>React | Firebase | API Integration</h4>
+                  <p>Players are presented with two randomly generated homophonous words - like piece and peace - and a single definition. Players must match the correct spelling to the definition.</p>
+                  <ul class="projects-buttons">
+                    <li class='left-button'><a href="https://whatchuknohuh.netlify.app/" target="_blank">view live</a></li>
+                    <li class='right-button'><a href="https://github.com/JunoProjectFour/whatchaKnoHuh" target="_blank">view code</a></li>
+                  </ul>
+                </div>
+              </div><!-- end of projects container -->
+            </li>
+            <li class="slide">
+              <div class="projects-container">
+                <div class="project-img">
+                  <img src="./assets/funnyLibs.png" alt="project 1 image">
+                </div><!-- end of project img -->
+                <div class="projects-text">
+                  <h3>FunnyLibs</h3>
+                  <h4>React App</h4>
+                  <p>A MadLibs Clone app where users are presented with a list of text fields, upon filling them out the user is then presented with a random story using their entered words. </p>
+                  <ul class="projects-buttons">
+                    <li class='left-button'><a href="https://superlative-pony-40db95.netlify.app/" target="_blank">view live</a></li>
+                    <li class='right-button'><a href="https://github.com/madLibsClone/FunnyLibs/tree/main" target="_blank">view code</a></li>
+                  </ul>
+                </div>
+              </div><!-- end of projects container -->
+            </li>
+          </ul> <!-- end of projects list -->
+        </div>
       </div><!-- end of wrapper -->
     </section><!-- end of projects section -->
 
@@ -159,7 +167,7 @@
             <ul class="social-links">
               <li><a href="https://www.linkedin.com/in/tylerwgeorge/" class="fa fa-linkedin" target="_blank"></a></li>
               <li><a href="https://github.com/tillerload" class="fa fa-github" target="_blank"></a></li>
-              <li><a href="https://twitter.com/TylerGeorge__" class="fa fa-twitter" target="_blank"></a></li>
+              <li><a href="https://twitter.com/TylerGeorgeDev" class="fa fa-twitter" target="_blank"></a></li>
               <li><a href="mailto:tyler.george.work@gmail.com" class="fa fa-envelope" target="_blank"></a></li>
             </ul><!-- end of social links -->
           </div><!-- end of contact text -->

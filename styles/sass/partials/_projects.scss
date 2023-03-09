@@ -1,57 +1,134 @@
 @use './variables';
 
 .projects-section {
+  .wip {
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    border: 2px solid red;
+     .wip-text {
+      font-size: 25px;
+      padding: 5px;
+    }
+  }
   h2 {
     font-family: variables.$header-font;
     font-size: variables.$h2-size;
   }
+  .project-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
   .projects-list {
     list-style: none;
     padding-left: 0;
-    li {
-      padding-bottom: 75px;
-    }
   }
 }
 
 .projects-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   .project-img {
     img {
       margin-left: 0;
-      width: 400px;
-      height: 300px;
+      width: 200px;
+      height: 150px;
     }
   }
   .projects-text {
-    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h3 {
-      font-size: variables.$h3-size;
       margin: 0;
+      font-size: variables.$h3-size;
     }
     h4 {
-      margin-top: 5px;
+      margin: 0;
       color: variables.$main-colour;
     }
     p {
-      margin: 10px 0 20px 0;
+      margin-top: 10px;
     }
   }
   .projects-buttons {
     display: flex;
     list-style: none;
-    padding-left: 0;
+    padding: 0;
     li {
-      padding: 10px 40px 10px 40px;
+      padding: 10px 40px;
       font-weight: bold;
       background-color: variables.$button-colour;
-      margin-right: 20px;
+      left: 300px;
       border: 2px solid #181A18;
       &:hover {
         border: 2px solid white;
         background-color: variables.$main-colour;
       }
     }
+    .right-button {
+      margin-left: 10px;
+    }
   }
+}
+
+.carousel {
+  height: 75vh;
+  position: relative;
+  width: 50%;
+  margin-left: 18vw;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: .3s;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 75%;
+  transform: translateY(-50%);
+  color: variables.$button-colour;
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: transparent;
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: variables.$main-colour;
+  // background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
 }
