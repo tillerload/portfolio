@@ -225,3 +225,15 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1400px;
+}
+
+body {
+  font-size: 125%;
+  color: white;
+  background-color: rgb(33, 33, 33);
+}
