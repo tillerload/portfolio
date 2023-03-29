@@ -235,7 +235,7 @@ html {
 body {
   font-size: 125%;
   color: white;
-  background-color: rgb(16, 16, 16);
+  background-color: rgb(28, 28, 28);
 }
 
 h2 {
@@ -252,6 +252,10 @@ ul {
   max-width: 1400px;
 }
 
+header {
+  height: 100vh;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,11 +264,63 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+nav h2 {
+  color: white;
+  font-size: 40px;
+}
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-nav ul li {
+nav ul a {
   margin: 0 0.7rem 0 0.7rem;
+}
+nav ul .contactButton {
+  background-color: #386641;
+  padding: 10px 20px 10px 20px;
+}
+
+.introTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.introLeft {
+  width: 50%;
+}
+.introLeft h1 {
+  font-size: 80px;
+  margin-bottom: 0;
+}
+
+.introRight img {
+  width: 400px;
+}
+
+.techStack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.techStack ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.techStack ul li {
+  margin: 0 10px 0 10px;
 }

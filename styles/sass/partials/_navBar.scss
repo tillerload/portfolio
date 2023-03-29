@@ -1,0 +1,28 @@
+.navWrapper {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1400px;
+}
+
+header {
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  h2 {
+    color: white;
+    font-size: 40px;
+  }
+  ul {
+    display: flex;
+    a {
+      margin: 0 0.7rem 0 0.7rem;
+    }
+    .contactButton {
+      background-color: #386641;
+      padding:  10px 20px 10px 20px;
+    }
+  }
+}

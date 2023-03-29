@@ -1,16 +1,30 @@
-.navWrapper {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1400px;
+.introTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-nav {
+.introLeft {
+  h1 {
+    font-size: 80px;
+    margin-bottom: 0;
+  }
+  width: 50%;
+  
+}
+
+.introRight img {
+  width: 400px;
+}
+
+.techStack {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   ul {
     display: flex;
     li {
-      margin: 0 0.7rem 0 0.7rem;
+      margin: 0 10px 0 10px;
     }
   }
 }
