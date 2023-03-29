@@ -1,0 +1,33 @@
+@use './typography';
+
+// Colours (probably going to change their values)
+
+$font-main: white;
+
+$button-colour: #a3813c;
+
+$main-colour: #386641;
+
+$secondary-colour: #7ea168;
+
+$background-colour: #E7E8EE;
+
+$form-background: #A5AE9E;
+
+$form-font: #2A3033;
+
+// typography 
+
+$header-font: 'Nunito', sans-serif;
+
+$h3-size: 2rem;
+
+$h2-size: 4rem;
+
+// to do:
+// add padding to input
+// textarea {resize:none'}
+// color of buttons in projects
+// look into netlify form usage
+// better screengrabs for projects
+// tweak projects layout, maybe like alternate flex-start - flex-end
