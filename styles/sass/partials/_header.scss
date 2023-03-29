@@ -1,0 +1,16 @@
+.navWrapper {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1400px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    li {
+      margin: 0 0.7rem 0 0.7rem;
+    }
+  }
+}

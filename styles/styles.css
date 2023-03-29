@@ -235,5 +235,36 @@ html {
 body {
   font-size: 125%;
   color: white;
-  background-color: rgb(33, 33, 33);
+  background-color: rgb(16, 16, 16);
+}
+
+h2 {
+  color: #386641;
+}
+
+ul {
+  list-style: none;
+}
+
+.navWrapper {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1400px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav ul li {
+  margin: 0 0.7rem 0 0.7rem;
 }
