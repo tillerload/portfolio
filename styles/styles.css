@@ -236,7 +236,7 @@ body {
   font-size: 125%;
   font-family: "Nunito", sans-serif;
   color: white;
-  background-color: rgb(28, 28, 28);
+  background-color: #1d1f23;
 }
 
 h2 {
@@ -281,49 +281,4 @@ nav ul a {
 nav ul .contactButton {
   background-color: #386641;
   padding: 10px 20px 10px 20px;
-}
-
-.introTop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.introLeft {
-  width: 50%;
-}
-.introLeft h1 {
-  font-size: 80px;
-  margin-bottom: 0;
-}
-
-.introRight img {
-  width: 400px;
-}
-
-.techStack {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 80%;
-}
-.techStack ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.techStack ul li {
-  margin: 0 10px 0 10px;
 }
