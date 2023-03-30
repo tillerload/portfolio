@@ -234,6 +234,7 @@ html {
 
 body {
   font-size: 125%;
+  font-family: "Nunito", sans-serif;
   color: white;
   background-color: rgb(28, 28, 28);
 }
@@ -250,6 +251,7 @@ ul {
   margin: 0 auto;
   width: 90%;
   max-width: 1400px;
+  overflow: hidden;
 }
 
 header {
@@ -315,6 +317,7 @@ nav ul .contactButton {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 80%;
 }
 .techStack ul {
   display: -webkit-box;
