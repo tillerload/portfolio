@@ -1,11 +1,5 @@
-.navWrapper {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1400px;
-  overflow: hidden;
-}
-
 header {
+  margin-top: 70px;
   height: 100vh;
 }
 
@@ -13,7 +7,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // background-color: wheat;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1d1f23;
+  padding: 0 40px 0 40px;
   h2 {
     color: white;
     font-size: 40px;
@@ -31,10 +29,4 @@ nav {
       padding:  10px 20px 10px 20px;
     }
   }
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }

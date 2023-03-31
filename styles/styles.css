@@ -247,14 +247,8 @@ ul {
   list-style: none;
 }
 
-.navWrapper {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1400px;
-  overflow: hidden;
-}
-
 header {
+  margin-top: 70px;
   height: 100vh;
 }
 
@@ -268,6 +262,11 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1d1f23;
+  padding: 0 40px 0 40px;
 }
 nav h2 {
   color: white;
@@ -287,10 +286,4 @@ nav ul a {
 nav ul .contactButton {
   background-color: #386641;
   padding: 10px 20px 10px 20px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
