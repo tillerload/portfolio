@@ -12,18 +12,29 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  // background-color: wheat;
   h2 {
     color: white;
     font-size: 40px;
+    margin: 0;
   }
   ul {
     display: flex;
     a {
       margin: 0 0.7rem 0 0.7rem;
+      text-decoration: none;
+      color: white;
     }
     .contactButton {
       background-color: #386641;
       padding:  10px 20px 10px 20px;
     }
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }

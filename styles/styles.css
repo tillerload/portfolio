@@ -265,10 +265,14 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 nav h2 {
   color: white;
   font-size: 40px;
+  margin: 0;
 }
 nav ul {
   display: -webkit-box;
@@ -277,8 +281,16 @@ nav ul {
 }
 nav ul a {
   margin: 0 0.7rem 0 0.7rem;
+  text-decoration: none;
+  color: white;
 }
 nav ul .contactButton {
   background-color: #386641;
   padding: 10px 20px 10px 20px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
