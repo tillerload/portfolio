@@ -287,3 +287,58 @@ nav ul .contactButton {
   background-color: #386641;
   padding: 10px 20px 10px 20px;
 }
+
+.introFlexStuff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.introFlexStuff .introTop {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.introFlexStuff .introTop .introLeft {
+  margin-left: 100px;
+}
+.introFlexStuff .introTop .introLeft h1 {
+  font-size: 80px;
+}
+.introFlexStuff .introTop .introRight {
+  margin-right: 100px;
+}
+.introFlexStuff .introTop .introRight img {
+  width: 400px;
+}
+.introFlexStuff .techStack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.introFlexStuff .techStack h2 {
+  font-size: 23px;
+}
+.introFlexStuff .techStack ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.introFlexStuff .techStack ul img {
+  width: 120px;
+}
