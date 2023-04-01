@@ -288,6 +288,10 @@ nav ul .contactButton {
   padding: 10px 20px 10px 20px;
 }
 
+header {
+  height: 100vh;
+}
+
 .introFlexStuff {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -310,6 +314,22 @@ nav ul .contactButton {
 }
 .introFlexStuff .introTop .introLeft {
   margin-left: 100px;
+}
+.introFlexStuff .introTop .introLeft ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0;
+}
+.introFlexStuff .introTop .introLeft ul li {
+  margin-right: 15px;
+}
+.introFlexStuff .introTop .introLeft ul li a {
+  text-decoration: none;
+  color: white;
 }
 .introFlexStuff .introTop .introLeft h1 {
   font-size: 80px;

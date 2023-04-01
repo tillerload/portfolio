@@ -1,6 +1,6 @@
-// header {
-//   height: 100vh;
-// }
+header {
+  height: 100vh;
+}
 
 .introFlexStuff {
   display: flex;
@@ -11,6 +11,18 @@
     display: flex;
     .introLeft {
       margin-left: 100px;
+      ul {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+        li {
+          margin-right: 15px;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
       h1 {
         font-size: 80px;
       }

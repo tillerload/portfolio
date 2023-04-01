@@ -29,3 +29,5 @@ buttons.forEach(button => {
     delete activeSlide.dataset.active
   })
 })
+
+// Logic for making nav bar stick to the top of the page 
