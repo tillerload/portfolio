@@ -353,6 +353,8 @@ header {
 }
 .introFlexStuff .techStack h2 {
   font-size: 23px;
+  padding-right: 30px;
+  border-right: 2px #386641 solid;
 }
 .introFlexStuff .techStack ul {
   display: -webkit-box;
