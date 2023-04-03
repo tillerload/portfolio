@@ -394,7 +394,7 @@ header {
   margin: 50px 100px 50px 0;
 }
 .aboutPic img {
-  width: 300px;
+  width: 200px;
   border-radius: 50%;
   border: 3px #386641 solid;
 }
@@ -472,9 +472,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .contactFlexStuff .contactLeft ul {
   display: -webkit-box;
