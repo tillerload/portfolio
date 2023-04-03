@@ -8,16 +8,20 @@
 .contactFlexStuff {
   display: flex;
   justify-content: space-between;
-.contactLeft {
-  p {
-    width: 35%;
-  }
-  ul {
-    display: flex;
-    padding: 0;
-    li {
-      margin-right: 20px;
+  .contactLeft {
+    
+    ul {
+      display: flex;
+      padding: 0;
+      li {
+        margin-right: 20px;
+      }
     }
   }
-}
+  .contactRight {
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
