@@ -462,3 +462,13 @@ header {
   text-align: center;
   margin: 50px 0 50px 0;
 }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #386641;
+}
