@@ -1,0 +1,23 @@
+@use './variables';
+
+.contactSection {
+  margin: 50px 0 150px 0;
+  
+}
+
+.contactFlexStuff {
+  display: flex;
+  justify-content: space-between;
+.contactLeft {
+  p {
+    width: 35%;
+  }
+  ul {
+    display: flex;
+    padding: 0;
+    li {
+      margin-right: 20px;
+    }
+  }
+}
+}

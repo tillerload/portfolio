@@ -250,6 +250,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 .yellowButton {
@@ -461,6 +462,31 @@ header {
 .displayedProject p {
   text-align: center;
   margin: 50px 0 50px 0;
+}
+
+.contactSection {
+  margin: 50px 0 150px 0;
+}
+
+.contactFlexStuff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactFlexStuff .contactLeft p {
+  width: 35%;
+}
+.contactFlexStuff .contactLeft ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+.contactFlexStuff .contactLeft ul li {
+  margin-right: 20px;
 }
 
 footer {
