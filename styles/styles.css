@@ -248,7 +248,7 @@ ul {
 }
 
 header {
-  margin-top: 70px;
+  margin-top: 150px;
   height: 100vh;
 }
 
@@ -292,6 +292,12 @@ header {
   height: 100vh;
 }
 
+.wrapperHeader {
+  width: 50%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
 .introFlexStuff {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,9 +306,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .introFlexStuff .introTop {
   -webkit-box-align: center;
@@ -347,12 +350,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .introFlexStuff .techStack h2 {
-  font-size: 23px;
   padding-right: 30px;
   border-right: 2px #386641 solid;
 }
@@ -362,7 +361,7 @@ header {
   display: flex;
 }
 .introFlexStuff .techStack ul img {
-  width: 120px;
+  width: 100px;
 }
 
 .aboutSection {
