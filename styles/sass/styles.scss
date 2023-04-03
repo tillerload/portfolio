@@ -1,5 +1,6 @@
-@import './partials/setup';
-@import './partials/global';
-@import './partials/variables';
-@import './partials/navBar';
-@import './partials/header';
+@use './partials/setup';
+@use './partials/global';
+@use './partials/variables';
+@use './partials/navBar';
+@use './partials/header';
+@use './partials/about';

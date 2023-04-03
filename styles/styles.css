@@ -364,3 +364,45 @@ header {
 .introFlexStuff .techStack ul img {
   width: 120px;
 }
+
+.aboutSection {
+  height: 100vh;
+}
+
+.aboutInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutPic {
+  margin-right: 100px;
+}
+.aboutPic img {
+  width: 300px;
+  border-radius: 50%;
+  border: 3px #386641 solid;
+}
+
+.softSkills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.softSkills h2 {
+  border-right: #386641 2px solid;
+}
+.softSkills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.softSkills ul li {
+  margin: 20px;
+}

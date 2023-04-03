@@ -1,0 +1,31 @@
+.aboutSection {
+  height: 100vh;
+}
+
+.aboutInfo {
+  display: flex;
+  align-items: center;
+}
+
+.aboutPic {
+  margin-right: 100px;
+  img {
+    width: 300px;
+    border-radius: 50%;
+    border: 3px #386641 solid;
+  }
+}
+
+.softSkills {
+  display: flex;
+  align-items: center;
+  h2 {
+    border-right: #386641 2px solid;
+  }
+  ul {
+    display: flex;
+    li {
+      margin: 20px;
+    }
+  }
+}
