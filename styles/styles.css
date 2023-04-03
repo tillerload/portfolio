@@ -248,6 +248,18 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+.yellowButton {
+  background-color: #a3813c;
+  border: none;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5%;
+}
+
 header {
   margin-top: 150px;
   height: 100vh;
@@ -278,15 +290,14 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 nav ul a {
   margin: 0 0.7rem 0 0.7rem;
   text-decoration: none;
   color: white;
-}
-nav ul .contactButton {
-  background-color: #386641;
-  padding: 10px 20px 10px 20px;
 }
 
 header {
@@ -426,7 +437,7 @@ header {
 }
 
 .displayedProject {
-  margin-top: 150px;
+  margin-top: 100px;
   width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -439,9 +450,15 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-.displayedProject h3 {
+.displayedProject h2 {
   color: white;
+  margin: 0;
 }
 .displayedProject h4 {
   color: #386641;
+  margin: 0;
+}
+.displayedProject p {
+  text-align: center;
+  margin-top: 50px;
 }

@@ -1,3 +1,5 @@
+@use './variables';
+
 .wrapper {
   margin: 0 auto;
   width: 80%;
@@ -7,16 +9,28 @@
 body {
   font-size: 125%;
   font-family: 'Nunito', sans-serif;
-  color: white;
+  color: variables.$font-main;
   // possibly change background color
-  background-color: #1d1f23;
+  background-color: variables.$main-background;
 }
 
 h2,
 h3 {
-  color: #386641;
+  color: variables.$main-colour;
 }
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.yellowButton {
+  background-color: variables.$button-colour;
+  border: none;
+  color: variables.$font-main;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5%;
 }
