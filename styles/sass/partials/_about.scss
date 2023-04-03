@@ -1,8 +1,7 @@
+@use './variables';
+
 .aboutSection {
   height: 100vh;
-//  h2 {
-//   margin-bottom: 50px;
-//  }
 }
 
 .aboutInfo {
@@ -15,7 +14,7 @@
   img {
     width: 300px;
     border-radius: 50%;
-    border: 3px #386641 solid;
+    border: 3px variables.$main-colour solid;
   }
 }
 
@@ -23,7 +22,7 @@
   display: flex;
   align-items: center;
   h2 {
-    border-right: #386641 2px solid;
+    border-right: variables.$main-colour 2px solid;
     padding-right: 30px;
   }
   ul {
