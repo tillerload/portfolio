@@ -239,7 +239,8 @@ body {
   background-color: #1d1f23;
 }
 
-h2 {
+h2,
+h3 {
   color: #386641;
 }
 
@@ -378,7 +379,7 @@ header {
 }
 
 .aboutPic {
-  margin-right: 100px;
+  margin: 50px 100px 50px 0;
 }
 .aboutPic img {
   width: 300px;
@@ -396,6 +397,7 @@ header {
 }
 .softSkills h2 {
   border-right: #386641 2px solid;
+  padding-right: 30px;
 }
 .softSkills ul {
   display: -webkit-box;

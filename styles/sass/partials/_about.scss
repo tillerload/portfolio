@@ -1,5 +1,8 @@
 .aboutSection {
   height: 100vh;
+//  h2 {
+//   margin-bottom: 50px;
+//  }
 }
 
 .aboutInfo {
@@ -8,7 +11,7 @@
 }
 
 .aboutPic {
-  margin-right: 100px;
+  margin: 50px 100px 50px 0;
   img {
     width: 300px;
     border-radius: 50%;
@@ -21,6 +24,7 @@
   align-items: center;
   h2 {
     border-right: #386641 2px solid;
+    padding-right: 30px;
   }
   ul {
     display: flex;
