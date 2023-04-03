@@ -1,0 +1,20 @@
+.featuredProjects {
+  height: 100vh;
+}
+
+.featuredFlexStuff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.displayedProject {
+  margin-top: 150px;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    color: white;
+  }
+}
