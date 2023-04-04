@@ -429,7 +429,7 @@ header {
   height: 100vh;
 }
 
-.featuredFlexStuff {
+.projects-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,10 +441,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.displayedProject {
-  margin-top: 100px;
-  width: 35%;
+.projects-container .projects-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -456,20 +453,22 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-.displayedProject h2 {
+.projects-container .projects-text h2 {
   color: white;
   margin: 0;
 }
-.displayedProject h4 {
+.projects-container .projects-text h4 {
   color: #386641;
-  margin: 0;
+  margin: 10px 0 10px 0;
 }
-.displayedProject p {
+.projects-container .projects-text p {
   text-align: center;
-  margin: 50px 0 50px 0;
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .carousel {
+  margin-top: 50px;
   height: 75vh;
   position: relative;
   width: 50%;
