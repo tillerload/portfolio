@@ -428,6 +428,44 @@ header {
   margin: 20px;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #386641;
+}
+
+.contactSection {
+  margin: 50px 0 150px 0;
+}
+
+.contactFlexStuff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactFlexStuff .contactLeft ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+.contactFlexStuff .contactLeft ul li {
+  margin-right: 20px;
+}
+.contactFlexStuff .contactRight form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .featuredProjects {
   height: 100vh;
 }
@@ -528,42 +566,4 @@ header {
 
 .carousel-button.next {
   right: 1rem;
-}
-
-.contactSection {
-  margin: 50px 0 150px 0;
-}
-
-.contactFlexStuff {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.contactFlexStuff .contactLeft ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0;
-}
-.contactFlexStuff .contactLeft ul li {
-  margin-right: 20px;
-}
-.contactFlexStuff .contactRight form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #386641;
 }
