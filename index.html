@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="assets/gangstas-christmas(1).png">
-  <script src="./app.js"></script>
 </head>
 <body>
   
@@ -111,7 +110,63 @@
     <section id="projects" class="featuredProjects">
       <div class="wrapper">
         <h2>Featured Projects</h2>
-        
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+          <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+          <ul class="projects-list" data-slides>
+            <li class="slide" data-active>
+              <div class="projects-container">
+                <div class="project-img">
+                  <img src="./assets/whatDayAtATime.ico" alt="project 1 image">
+                </div><!-- end of project img -->
+                <div class="projects-text">
+                  <h3>One Day at a Time</h3>
+                  <h4>React | Firebase</h4>
+                  <p>A mood tracker app, user can select a mood they are feeling on a given day, that mood is displayed as a corresponding color on a calendar for the current month</p>
+                  <ul class="projects-buttons">
+                    <li class='left-button'><a href="https://fluffy-klepon-a96676.netlify.app/" target="_blank">view live</a></li>
+                    <li class='right-button'><a href="https://github.com/tillerload/one-day-at-a-time" target="_blank">view code</a></li>
+                  </ul>
+                  <div class="wip">
+                    <h3 class="wip-text">WOrk in progress</h3>
+                  </div>
+                </div>
+              </div><!-- end of projects container -->
+            </li>
+            <li class="slide" >
+              <div class="projects-container">
+                <div class="project-img">
+                  <img src="./assets/whatDoYouNoImg.png" alt="project 3 image">
+                </div><!-- end of project img -->
+                <div class="projects-text">
+                  <h3>What do YOU no?</h3>
+                  <h4>React | Firebase | API Integration</h4>
+                  <p>Players are presented with two randomly generated homophonous words - like piece and peace - and a single definition. Players must match the correct spelling to the definition.</p>
+                  <ul class="projects-buttons">
+                    <li class='left-button'><a href="https://whatchuknohuh.netlify.app/" target="_blank">view live</a></li>
+                    <li class='right-button'><a href="https://github.com/JunoProjectFour/whatchaKnoHuh" target="_blank">view code</a></li>
+                  </ul>
+                </div>
+              </div><!-- end of projects container -->
+            </li>
+            <li class="slide">
+              <div class="projects-container">
+                <div class="project-img">
+                  <img src="./assets/funnyLibs.png" alt="project 1 image">
+                </div><!-- end of project img -->
+                <div class="projects-text">
+                  <h3>FunnyLibs</h3>
+                  <h4>React App</h4>
+                  <p>A MadLibs Clone app where users are presented with a list of text fields, upon filling them out the user is then presented with a random story using their entered words. </p>
+                  <ul class="projects-buttons">
+                    <li class='left-button'><a href="https://superlative-pony-40db95.netlify.app/" target="_blank">view live</a></li>
+                    <li class='right-button'><a href="https://github.com/madLibsClone/FunnyLibs/tree/main" target="_blank">view code</a></li>
+                  </ul>
+                </div>
+              </div><!-- end of projects container -->
+            </li>
+          </ul> <!-- end of projects list -->
+        </div>
       </div>
     </section>
 
@@ -146,4 +201,5 @@
   </footer>
   
 </body>
+<script src="./app.js"></script>
 </html>
