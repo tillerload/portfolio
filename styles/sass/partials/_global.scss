@@ -11,6 +11,10 @@ html {
   max-width: 1400px;
 }
 
+.socialLinks li a:hover {
+  color: variables.$button-colour;
+}
+
 body {
   font-size: 125%;
   font-family: 'Nunito', sans-serif;
@@ -42,3 +46,9 @@ a {
   padding: 10px 15px 10px 15px;
   border-radius: 5%;
 }
+
+.yellowButton:hover {
+  background-color: variables.$main-colour;
+
+}
+

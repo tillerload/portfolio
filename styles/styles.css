@@ -237,6 +237,10 @@ html {
   max-width: 1400px;
 }
 
+.socialLinks li a:hover {
+  color: #a3813c;
+}
+
 body {
   font-size: 125%;
   font-family: "Nunito", sans-serif;
@@ -264,6 +268,10 @@ a {
   color: white;
   padding: 10px 15px 10px 15px;
   border-radius: 5%;
+}
+
+.yellowButton:hover {
+  background-color: #386641;
 }
 
 header {
@@ -347,10 +355,6 @@ header {
 }
 .introFlexStuff .introTop .introLeft ul li {
   margin-right: 15px;
-}
-.introFlexStuff .introTop .introLeft ul li a {
-  text-decoration: none;
-  color: white;
 }
 .introFlexStuff .introTop .introLeft h1 {
   font-size: 80px;
@@ -472,7 +476,7 @@ header {
   height: 75vh;
   position: relative;
   width: 50%;
-  margin-left: 18vw;
+  margin-left: 25%;
 }
 
 .carousel > ul {
