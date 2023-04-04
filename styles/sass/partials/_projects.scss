@@ -31,3 +31,20 @@
   
 }
 
+// everything above here is currently not working but may be useable
+
+.carousel {
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+
+}
+
+.slide[data-active]
+ {
+  opacity: 1;
+ }

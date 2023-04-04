@@ -1,5 +1,10 @@
 @use './variables';
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px;
+}
+
 .wrapper {
   margin: 0 auto;
   width: 80%;
@@ -12,7 +17,9 @@ body {
   color: variables.$font-main;
   // possibly change background color
   background-color: variables.$main-background;
+  
 }
+
 
 h2,
 h3 {
