@@ -567,3 +567,54 @@ footer {
 .carousel-button.next {
   right: 1rem;
 }
+
+@media (max-width: 1168px) {
+  .techStack ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.softSkills ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1020px) {
+  .introFlexStuff .techStack {
+    margin-left: 0;
+  }
+  .introFlexStuff .introTop .introLeft {
+    margin-left: 0;
+  }
+  .introFlexStuff .introTop .introRight {
+    margin-right: 0;
+  }
+}
+@media (max-width: 428px) {
+  h2 {
+    text-align: center;
+  }
+  .contactLeft ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .techStack {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutInfo .aboutPic {
+    display: none;
+  }
+  .aboutInfo p {
+    text-align: center;
+  }
+  .softSkills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}

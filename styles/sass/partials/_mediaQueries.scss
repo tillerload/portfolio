@@ -1,0 +1,79 @@
+@use './variables';
+
+@media(max-width: 1168px) {
+
+  .techStack {
+    ul {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.softSkills {
+  ul {
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width: 1020px) {
+
+  .introFlexStuff {
+    .techStack {
+      margin-left: 0;
+    }
+    .introTop {
+      .introLeft {
+        margin-left: 0;
+      }
+      .introRight {
+        margin-right: 0;
+      }
+    }
+  }
+  
+}
+
+@media(max-width: 428px) {
+
+  // Global Things
+
+  h2 {
+    text-align: center;
+  }
+
+  // Contact Section
+  .contactLeft {
+    ul {
+      justify-content: center;
+    }
+  }
+
+  // Header Section
+
+  .techStack {
+    flex-direction: column;
+  }
+
+  // About Section
+
+  .aboutInfo {
+    .aboutPic {
+      display: none;
+  
+    }
+    p {
+      text-align: center;
+    }
+  }
+  
+  .softSkills {
+    flex-direction: column;
+    ul {
+      li {
+        
+      }
+    }
+  }
+
+
+}
