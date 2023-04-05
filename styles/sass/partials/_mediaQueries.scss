@@ -46,12 +46,50 @@
     ul {
       justify-content: center;
     }
+    p {
+      text-align: center;
+    }
+  }
+
+  // Nav Bar Section
+
+  nav {
+    padding: 0;
+    h2 {
+      padding-left: 20px;
+    }
+    .hiddenNav {
+      display: none;
+    }
   }
 
   // Header Section
 
+
+  .introFlexStuff .introTop .introLeft {
+    text-align: center;
+    h1 {
+      margin: 0;
+    }
+    ul {
+      justify-content: center;
+    }
+  }
+
+  .introRight img {
+    display: none;
+  }
+
   .techStack {
     flex-direction: column;
+    ul {
+      padding-left: 22px;
+    }
+  }
+
+  .introFlexStuff .techStack h2 {
+    border: none;
+    padding-right: 0;
   }
 
   // About Section
@@ -68,12 +106,35 @@
   
   .softSkills {
     flex-direction: column;
+    justify-content: center;
+    h2 {
+      border: none;
+      padding-right: 0;
+      
+    }
     ul {
+      padding-left: 0;
+      justify-content: center;
       li {
         
       }
     }
   }
 
+  // Projects Section
+  .projects-text {
+    h4 {
+      text-align: center;
+    }
+    .projectLinks {
+      display: flex;
+      a {
+        margin: 0 10px 0 10px;
+      }
+    }
+  }
+  .carousel-button {
+    top: 100%;
+  }
 
 }

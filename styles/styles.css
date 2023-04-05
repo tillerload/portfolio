@@ -599,11 +599,44 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .contactLeft p {
+    text-align: center;
+  }
+  nav {
+    padding: 0;
+  }
+  nav h2 {
+    padding-left: 20px;
+  }
+  nav .hiddenNav {
+    display: none;
+  }
+  .introFlexStuff .introTop .introLeft {
+    text-align: center;
+  }
+  .introFlexStuff .introTop .introLeft h1 {
+    margin: 0;
+  }
+  .introFlexStuff .introTop .introLeft ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .introRight img {
+    display: none;
+  }
   .techStack {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .techStack ul {
+    padding-left: 22px;
+  }
+  .introFlexStuff .techStack h2 {
+    border: none;
+    padding-right: 0;
   }
   .aboutInfo .aboutPic {
     display: none;
@@ -616,5 +649,32 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .softSkills h2 {
+    border: none;
+    padding-right: 0;
+  }
+  .softSkills ul {
+    padding-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projects-text h4 {
+    text-align: center;
+  }
+  .projects-text .projectLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .projects-text .projectLinks a {
+    margin: 0 10px 0 10px;
+  }
+  .carousel-button {
+    top: 100%;
   }
 }
