@@ -17,6 +17,7 @@
 
 @media(max-width: 1020px) {
 
+
   .introFlexStuff {
     .techStack {
       margin-left: 0;
@@ -29,6 +30,45 @@
         margin-right: 0;
       }
     }
+  }
+
+  header {
+    .hamburger {
+      display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navMenu {
+      position: fixed;
+      left: -100%;
+      top: 20px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      height: 50px;
+      background-color: variables.$main-background;
+      .navItem {
+        margin: 16px 0;
+      }
+    }
+
+    .navMenu.active {
+      left: 0;
+    }
+    
   }
   
 }
@@ -58,9 +98,7 @@
     h2 {
       padding-left: 20px;
     }
-    .hiddenNav {
-      display: none;
-    }
+    
   }
 
   // Header Section

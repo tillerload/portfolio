@@ -312,10 +312,25 @@ nav ul {
       -ms-flex-align: center;
           align-items: center;
 }
-nav ul a {
+nav ul li {
   margin: 0 0.7rem 0 0.7rem;
+}
+nav ul li a {
   text-decoration: none;
   color: white;
+}
+nav .hamburger {
+  display: none;
+  cursor: pointer;
+}
+nav .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  -webkit-transform: all 0.3s ease;
+          transform: all 0.3s ease;
+  background-color: white;
 }
 
 header {
@@ -589,6 +604,43 @@ footer {
   .introFlexStuff .introTop .introRight {
     margin-right: 0;
   }
+  header .hamburger {
+    display: block;
+  }
+  header .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  header .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  header .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  header .navMenu {
+    position: fixed;
+    left: -100%;
+    top: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    height: 50px;
+    background-color: #1d1f23;
+  }
+  header .navMenu .navItem {
+    margin: 16px 0;
+  }
+  header .navMenu.active {
+    left: 0;
+  }
 }
 @media (max-width: 428px) {
   h2 {
@@ -607,9 +659,6 @@ footer {
   }
   nav h2 {
     padding-left: 20px;
-  }
-  nav .hiddenNav {
-    display: none;
   }
   .introFlexStuff .introTop .introLeft {
     text-align: center;

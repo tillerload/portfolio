@@ -22,11 +22,28 @@ nav {
   ul {
     display: flex;
     align-items: center;
-    a {
+    li {
       margin: 0 0.7rem 0 0.7rem;
-      text-decoration: none;
-      color: variables.$font-main;
+      a {
+        text-decoration: none;
+        color: variables.$font-main;
+      }
     }
   
   }
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0 ;
+    transform: all 0.3s ease;
+    background-color: variables.$font-main;
+  }
+
+
 }
